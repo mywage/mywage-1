@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hero_mywage_entity_MyWebPageFile" object="${mywebpagefile}" path="/mywebpagefiles" z="v/+Vk3yLUb0iK8t4f6yq/rcqx9g=">
+        <field:display field="webPageContent" id="s_com_hero_mywage_entity_MyWebPageFile_webPageContent" object="${mywebpagefile}" z="lE2aZ97ApRl+yAdXkBUfwJGGsxk="/>
+        <field:display field="contentType" id="s_com_hero_mywage_entity_MyWebPageFile_contentType" object="${mywebpagefile}" z="K/55sDNfMncO86hE0fXlLDL3984="/>
+        <field:display field="isMain" id="s_com_hero_mywage_entity_MyWebPageFile_isMain" object="${mywebpagefile}" z="VFJ6KU4xNYq2vVhQShQnjSZXXQg="/>
+        <field:display field="priority" id="s_com_hero_mywage_entity_MyWebPageFile_priority" object="${mywebpagefile}" z="uCPt9DLpSHKiLETPy0Uf4eGOsOU="/>
+        <field:display date="true" dateTimePattern="${myWebPageFile_createtime_date_format}" field="createTime" id="s_com_hero_mywage_entity_MyWebPageFile_createTime" object="${mywebpagefile}" z="Hf/vCgErR/K2Tqn9qzhRS/vsw58="/>
+        <field:display date="true" dateTimePattern="${myWebPageFile_updatetime_date_format}" field="updateTime" id="s_com_hero_mywage_entity_MyWebPageFile_updateTime" object="${mywebpagefile}" z="ZzjLo2K66cbStA34Pk39L1spU8g="/>
+    </page:show>
+</div>

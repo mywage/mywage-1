@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_hero_mywage_entity_MyWebPage" object="${mywebpage}" path="/mywebpages" z="+1aaTect5ttLMrCKW8TYPNfrEyk=">
+        <field:display field="collectionName" id="s_com_hero_mywage_entity_MyWebPage_collectionName" object="${mywebpage}" z="1CH5JsV0xJIcH+ZfdywkqQTB12o="/>
+        <field:display field="webPageUrl" id="s_com_hero_mywage_entity_MyWebPage_webPageUrl" object="${mywebpage}" z="7IJKXwIqZPHP14vbZZbf7wLo+fo="/>
+        <field:display field="status" id="s_com_hero_mywage_entity_MyWebPage_status" object="${mywebpage}" z="2Tl1JCf4Lb0mcMAhlpw+qBS9zys="/>
+        <field:display field="contentList" id="s_com_hero_mywage_entity_MyWebPage_contentList" object="${mywebpage}" z="AzSc5Rp12sVqUKpWZPGdtNh4oK4="/>
+        <field:display field="webUrl" id="s_com_hero_mywage_entity_MyWebPage_webUrl" object="${mywebpage}" z="23Eird5Vi2hEnQM/Q+lrGvqQY3Y="/>
+        <field:display field="parent" id="s_com_hero_mywage_entity_MyWebPage_parent" object="${mywebpage}" z="NuIxBNiS4tcNaTFlnm/VzeD9O6Q="/>
+        <field:display field="isPublic" id="s_com_hero_mywage_entity_MyWebPage_isPublic" object="${mywebpage}" z="IDK0/w8hZq7ppZLqmtPgama+NbM="/>
+    </page:show>
+</div>

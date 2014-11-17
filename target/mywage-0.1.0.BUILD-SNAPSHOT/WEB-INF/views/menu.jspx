@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_mywebpagefile" z="GnfPbr7gRxEy0TgfL618Lt128JU=">
+            <menu:item id="i_mywebpagefile_new" messageCode="global_menu_new" url="/mywebpagefiles?form" z="/3Kb7pv8issRl5Zt53aYaaXSt/0="/>
+            <menu:item id="i_mywebpagefile_list" messageCode="global_menu_list" url="/mywebpagefiles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="eQRaXfauorQa23L4Q2ijJwOBv/E="/>
+        </menu:category>
+        <menu:category id="c_aboutme" z="vaunUYh5bOvtORKLs/RaxOjA2xk=">
+            <menu:item id="i_aboutme_new" messageCode="global_menu_new" url="/aboutmes?form" z="b8p2jEQpc9uibDTr5BcZzXWzilE="/>
+            <menu:item id="i_aboutme_list" messageCode="global_menu_list" url="/aboutmes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="SXzQ0zuOC671RJOglSpzLHXrm98="/>
+        </menu:category>
+        <menu:category id="c_userinfo" z="wp5yFzdbyDI+Dtuj/pSBCxK3UHA=">
+            <menu:item id="i_userinfo_new" messageCode="global_menu_new" url="/userinfoes?form" z="jGpK8Q3EcXGhijBcCm+M83p+7PM="/>
+            <menu:item id="i_userinfo_list" messageCode="global_menu_list" url="/userinfoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="wTZf/0/g2xvsX1MjMAQwgE/LJmM="/>
+        </menu:category>
+        <menu:category id="c_mywebpage" z="X6Jr7RMHFN47lH9hQRu2GjE2PVg=">
+            <menu:item id="i_mywebpage_new" messageCode="global_menu_new" url="/mywebpages?form" z="BGqC8e5zp2kv+ueQ7KAF1xJcp+U="/>
+            <menu:item id="i_mywebpage_list" messageCode="global_menu_list" url="/mywebpages?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ecd6In7eDKtsu6y/4Y9D9mbSnnc="/>
+        </menu:category>
+    </menu:menu>
+</div>

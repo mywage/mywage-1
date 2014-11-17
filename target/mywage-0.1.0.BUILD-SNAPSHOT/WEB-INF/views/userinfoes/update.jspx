@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_hero_mywage_entity_UserInfo" modelAttribute="userInfo" path="/userinfoes" versionField="none" z="BM2ax4DLNzgjzckZ9rLoYS712+0=">
+        <field:textarea field="nickname" id="c_com_hero_mywage_entity_UserInfo_nickname" z="VYZcC6mbQvam4vpdv1fq/fmaBb8="/>
+        <field:textarea field="userName" id="c_com_hero_mywage_entity_UserInfo_userName" required="true" z="rQ22D6ejcPG4ziYh9kBG+ghFYps="/>
+        <field:textarea field="passworld" id="c_com_hero_mywage_entity_UserInfo_passworld" required="true" z="dDaXkOtPsLHy1cGhTzyQcilWels="/>
+        <field:select field="myWebPage" id="c_com_hero_mywage_entity_UserInfo_myWebPage" items="${contenttypes}" path="contenttypes" z="3qcSjdFRxQGiBCbMeOfgx+JtfFE="/>
+    </form:update>
+</div>

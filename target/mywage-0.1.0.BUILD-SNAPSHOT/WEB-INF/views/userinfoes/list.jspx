@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hero_mywage_entity_UserInfo" items="${userinfoes}" z="+CEXv5G1wlrJmJwl0WvOJ9bt1BY=">
+        <table:table data="${userinfoes}" id="l_com_hero_mywage_entity_UserInfo" path="/userinfoes" z="mpb4ib146Nw9kdPWfq0BSBIs8rQ=">
+            <table:column id="c_com_hero_mywage_entity_UserInfo_nickname" property="nickname" z="mxiNVuj4BWb4vctNfSEv/u+CuBc="/>
+            <table:column id="c_com_hero_mywage_entity_UserInfo_userName" property="userName" z="8ubRX3hG1tKAe8A59VB6BsHlg68="/>
+            <table:column id="c_com_hero_mywage_entity_UserInfo_passworld" property="passworld" z="9oV980dpCPeAttIXIkT1FkDVD3E="/>
+            <table:column id="c_com_hero_mywage_entity_UserInfo_myWebPage" property="myWebPage" z="00qR1fhpeJ8sUG5m8jckDh3sb7I="/>
+        </table:table>
+    </page:list>
+</div>
