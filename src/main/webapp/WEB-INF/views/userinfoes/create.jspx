@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_hero_mywage_entity_UserInfo" modelAttribute="userInfo" path="/userinfoes" render="${empty dependencies}" z="Bmn2duwXYVeS6IWoTYPCSYDIn2Q=">
+        <field:textarea field="nickname" id="c_com_hero_mywage_entity_UserInfo_nickname" z="VYZcC6mbQvam4vpdv1fq/fmaBb8="/>
+        <field:textarea field="userName" id="c_com_hero_mywage_entity_UserInfo_userName" required="true" z="rQ22D6ejcPG4ziYh9kBG+ghFYps="/>
+        <field:textarea field="passworld" id="c_com_hero_mywage_entity_UserInfo_passworld" required="true" z="dDaXkOtPsLHy1cGhTzyQcilWels="/>
+        <field:select field="myWebPage" id="c_com_hero_mywage_entity_UserInfo_myWebPage" items="${contenttypes}" path="contenttypes" z="3qcSjdFRxQGiBCbMeOfgx+JtfFE="/>
+        <field:input field="id" id="c_com_hero_mywage_entity_UserInfo_id" required="true" validationMessageCode="field_invalid_integer" z="1N8LXri6ZuoP1uj0u+rO7s9TFx0="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_hero_mywage_entity_UserInfo" render="${not empty dependencies}" z="BD/TnXnHSLS3s/jWgl4d6O2Ovt4="/>
+</div>

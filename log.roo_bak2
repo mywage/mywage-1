@@ -1,0 +1,48 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-21 13:22:40
+project --topLevelPackage com.hero.mywage --java 7 --projectName mywage --packaging WAR
+mongo setup --databaseName mywage --host 127.0.0.1 --port 27017 --username mywage --password mywage
+enum type --class com.hero.mywage.entity.ContentType --path SRC_MAIN_JAVA
+field enum --fieldName HTML --type ~.entity.ContentType
+field enum --fieldName JAVASCRIPT --type ~.entity.ContentType
+field enum --fieldName CSS --type ~.entity.ContentType
+field enum --fieldName XML --type ~.entity.ContentType
+field enum --fieldName JSON --type ~.entity.ContentType
+entity mongo --class com.hero.mywage.entity.MyWebPageFile --identifierType java.math.BigInteger --testAutomatically yes
+field file --fieldName webPageContent --contentType TXT --notNull yes
+field enum --fieldName contentType --type ~.entity.ContentType --notNull yes
+field boolean --fieldName isMain --notNull yes --value false
+field number --fieldName priority --type java.lang.Integer
+field date --type java.util.Date --fieldName createTime
+field date --type java.util.Date --fieldName updateTime
+entity mongo --class com.hero.mywage.entity.MyWebPage --testAutomatically yes --identifierType java.math.BigInteger
+field string --fieldName collectionName --notNull yes --sizeMax 100
+field string --fieldName webPageUrl --notNull yes --sizeMax 500
+field number --type java.lang.Integer --fieldName status --max 100
+field set --fieldName contentList --type ~.entity.MyWebPageFile
+field string --fieldName webUrl --notNull no
+field reference --fieldName parent --type ~.entity.MyWebPage
+field boolean --fieldName isPublic --value true
+entity mongo --class ~.entity.UserInfo --identifierType java.math.BigInteger --testAutomatically yes
+field string --fieldName nickname --sizeMax 50
+field string --fieldName userName --sizeMax 100 --notNull yes --unique yes
+field string --fieldName passworld --notNull yes --sizeMax 50
+field set --fieldName myWebPage --type ~.entity.ContentType
+repository mongo --interface ~.repository.UserInfoRepository --entity ~.entity.UserInfo
+repository mongo --interface ~.repository.MyWebPageRepository --entity ~.entity.MyWebPage
+repository mongo --interface ~.repository.MyWebPageFile --entity ~.entity.MyWebPageFile
+service all --interfacePackage com.hero.mywage.service
+service all --interfacePackage com.hero.mywage.service --classPackage com.hero.mywage.service --useXmlConfiguration no
+service type --interface ~.service.MyWebPageService --entity ~.entity.MyWebPage --class ~.service.MyWebPageImpl
+service type --interface ~.service.UserInfoService --entity ~.entity.UserInfo --class ~.service.UserInfoImpl
+service type --interface ~.service.MyWebPageFileService --entity ~.entity.MyWebPageFile --class ~.service.MyWebPageFileImpl
+service type --interface ~.service.AboutMeService --entity ~.entity.AboutMe --class ~.service.AboutMeImpl
+service type --interface ~.service.AboutMeService --entity ~.entity.AboutMe --class ~.service.AboutMeImpl
+service type --interface ~.service.AboutMeService --entity ~.entity.AboutMe --class ~.service.AboutMeImpl
+entity mongo --class ~.entity.AboutMe --identifierType java.math.BigInteger --testAutomatically yes
+field reference --fieldName userInfo --type ~.entity.UserInfo
+field string --fieldName selfIntroduction --sizeMax 200
+field file --fieldName myPhoto --contentType GIF
+service type --interface ~.service.AboutMeService --entity ~.entity.AboutMe --class ~.service.AboutMeImpl
+service type --interface ~.service.AboutMeService --entity ~.entity.AboutMe --class ~.service.AboutMeImpl
+exit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-11-21 13:33:50

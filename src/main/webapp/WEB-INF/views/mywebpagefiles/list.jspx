@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_hero_mywage_entity_MyWebPageFile" items="${mywebpagefiles}" z="ArvRxTfDoOHmIac0t7OC6HkOLAA=">
+        <table:table data="${mywebpagefiles}" id="l_com_hero_mywage_entity_MyWebPageFile" path="/mywebpagefiles" z="KjcYhAmN9Hxsl5HIX9gNnxzBRXE=">
+            <table:column id="c_com_hero_mywage_entity_MyWebPageFile_webPageContent" property="webPageContent" z="AqKGJ6zmmFmsPb9SqbYx6OvpclQ="/>
+            <table:column id="c_com_hero_mywage_entity_MyWebPageFile_contentType" property="contentType" z="KCxGWEgnuAv86tAgGI66b8L9w6U="/>
+            <table:column id="c_com_hero_mywage_entity_MyWebPageFile_isMain" property="isMain" z="dJPlPBdQAUqto3kJzNCxQf+eyxw="/>
+            <table:column id="c_com_hero_mywage_entity_MyWebPageFile_priority" property="priority" z="+r4Kvz4XOaOA45++WSEhHTZN/YI="/>
+            <table:column date="true" dateTimePattern="${myWebPageFile_createtime_date_format}" id="c_com_hero_mywage_entity_MyWebPageFile_createTime" property="createTime" z="PNXkRVOzO+3+a0BqbDyhC5mjPe8="/>
+            <table:column date="true" dateTimePattern="${myWebPageFile_updatetime_date_format}" id="c_com_hero_mywage_entity_MyWebPageFile_updateTime" property="updateTime" z="5hr89HXUp24HZEQQlRG2IWUZaxA="/>
+        </table:table>
+    </page:list>
+</div>
